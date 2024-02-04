@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: whitesmoke;
+}
+::-webkit-scrollbar{
+    width:0.5vh;
+}
+::-webkit-scrollbar-thumb{
+   background-color:rgb(14, 112, 177) ;
+}
+body{
+   background-color: black;
+   overflow-x: hidden;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+b{
+    font-weight:900;
+    color:rgb(14, 112, 177) ;
+}
+
+#navbar{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.867);
+    border-bottom: 1px solid whitesmoke;
+    z-index: 10;
+    top:0
+}
+#logo{
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top:-15px;
+    left: 10px;
+}
+#navbtn{
+    display: flex;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   align-items:center ;
+   justify-content: center;
+}
+#mobile-navbar{
+    position: absolute;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    z-index: 14;
+    cursor: pointer;
+    display: none;
+}
+#mobilebar{
+    background-color: #000000;
+    height: fit-content;
+    color:rgb(255, 255, 255) ;
+    position: absolute;
+    top: 50px;
+    border-top: 1px solid snow;
+    border-bottom: 1px solid snow;
+    right: 10px;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: none;
+
+}
+.mbtn{
+    padding:15px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.5s; 
+}
+.mbtn:hover{
+    color: rgb(5, 106, 173);
+    text-decoration: overline;
+    }
+.btn{
+padding:30px;
+font-weight: 800;
+font-size: 20px;
+transition: all 0.5s;
+}
+.btn:hover{
+color: rgb(5, 106, 173);
+text-decoration: overline;
+}
+#Herosection{
+    height: 100vh;
+    width: 100vw;
+ position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10vh;
+
+}
+#background{
+    width: 100%;
+    height: 100vh;
+   position: absolute;
+   top:150px;
+   z-index: -10;
+}
+#textlogo{
+    font-size: 100px;
+    font-weight:900 ;
+    -webkit-text-stroke: 2px rgb(5, 106, 173);
+    color:transparent;
+    transition: all 0.5s;
+    position: absolute;
+    top: 20vh;
+    cursor: default;
+}
+#textlogo:hover{
+    color: whitesmoke;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+#sum{
+    width: 50%;
+    cursor: default;
+    position: absolute;
+    font-weight: 600;
+    top: 40vh;
+    transition: all 0.5s;
+}
+#sum:hover{
+    color: rgb(5, 106, 173);
+}
+#whyus{
+    width: 35%;
+    position: absolute;
+    left: 25px;
+    font-weight: 600;
+    top: 40vh;
+    cursor: default;
+}
+#whyus h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+#aboutus{
+    width: 35%;
+    position: absolute;
+    right: 25px;
+    font-weight: 600;
+    top: 40vh;
+    cursor: default;
+}
+#aboutus h1{
+    font-size: 50px;
+    font-weight: 900;
+}
+.hbtn{
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    width:150px;
+    border: 2px solid whitesmoke;
+    padding: 0.3%;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+.one{
+    left:35vw;
+}
+.two{
+    right: 35vw;
+}
+.hbtn:hover{
+    color: rgb(5, 106, 173) ;
+    border: 2px solid rgb(5, 106, 173);
+    border-radius: 20px;
+}
+#sec1{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+}
+.sideline{
+    height: 200px;
+    position: absolute;
+    right: 2px;
+    z-index: 1;
+}
+.second{
+    left: 2px;
+    bottom: -10%;
+    transform: rotate(180deg);
+
+}
+.tabs{
+    width: 25%;
+    height: 85%;
+    position: relative;
+    margin: 5%;
+    background: linear-gradient(#0914ab, #000000);
+    text-align: center;
+    transition:all 1s;
+    border-radius: 20px;
+}
+.tabs h1{
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black;
+    cursor: default;
+}
+.tabs p{
+    font-weight: 600;
+    width: 95%;
+    margin: 1.5%;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 25px;
+    display: none;
+   cursor: default;
+}
+.tabs img{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+}
+.tabs:hover p{
+    display: block;
+}
+.tabs:hover img{
+    opacity: 0.10;
+}
+.tabs h6{
+ z-index: 10;
+ position: absolute;
+ bottom: 0;
+ font-size: 15px;
+ font-weight: 900;
+ left: 35%;
+ right: 35%;
+ text-shadow: 1px 1px 2px black;
+}
+
+.tabbtn{
+    background-color: rgb(5, 106, 173);
+    border:1px solid  rgb(5, 106, 173);
+    padding: 1%;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    margin: auto;
+}
+.tabbtn:hover{
+    background-color: whitesmoke;
+    color: rgb(5, 106, 173);
+}
+.tabs:hover .tabbtn{
+    display: block;
+}
+#banner{
+   
+    height:20vh;
+    width:10000%;
+    display: flex;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    margin-top: 10vh;
+  
+}
+.scr{
+font-size:3vw;
+animation: slide 30s  linear infinite;
+display: flex ;
+height:15vw;
+width:max-content;
+padding: 0;
+position: relative;
+flex-wrap:wrap;   
+
+}
+.scr h1{
+margin:3vh;
+margin-left:4vw;
+-webkit-text-stroke:0.2vw  #848484 ;
+color: black;
+transition: color 1.5s  ,-webkit-text-stroke 0.5s;
+cursor:none;
+}
+.scr h1:hover{
+  color: rgb(5, 106, 173) ;
+  -webkit-text-stroke: 1px  rgb(5, 106, 173) ;
+}
+@keyframes slide {
+ 0%{
+    transform: translateX(0);
+ }
+ 100%{
+    transform: translateX(-100%);
+ }
+}
+#lastsec{
+    margin: 1%;
+  width: 100%;
+  height: 70vh;
+  text-align: center;
+}
+#innerdiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  
+}
+#innerdiv div{
+    margin: 0.5%;
+    border-radius: 20px;
+    padding: 3%;
+    background-color: rgba(255, 255, 255, 0.121) ;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+#innerdiv h1{
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+}
+
+#footer{
+    background-color:rgba(255, 255, 255, 0.175);
+    border-top: 2px solid rgb(5, 106, 173);
+    height: 30vh;
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#part1{
+    width: 30%;
+   border-right:2.5px solid rgb(5, 106, 173);
+   text-align: center;
+
+}
+span{
+    margin-left:15%;
+}
+#footlogo{
+position: absolute;
+height: 150px;
+width: 150px;
+top: -30px;
+left: 10px;
+}
+#soclogo{
+    margin: 1%;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#soclogo img{
+height: 40px;
+width: 40px;
+margin:5%;
+}
+#part2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+#part2 a{
+    text-decoration: underline;
+    color:  rgb(5, 106, 173);
+}
+#part1 h4{
+    font-size: 20px;
+}
+#part2 h4{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:1024px) {
+#sum{
+    width: 75%;
+}
+#whyus{
+    left: 10px;
+    width: 37%;
+    font-weight: 400;
+    top: 30vh;
+    cursor: default;
+}
+#aboutus{
+    right: 10px;
+    width: 37%;
+    font-weight: 400;
+    top: 30vh;
+    cursor: default;
+}
+.one{
+    left: 25vw;
+}
+.two{
+    right: 25vw;
+}
+#sec1{
+    height: 200vh;
+    flex-direction: column;
+    align-items: center;
+}
+.tabs{
+    height: 500px;
+    width: 600px    ;
+}
+#banner{
+    margin-top: 17vh;
+}
+#lastsec{
+    height:150vh
+}
+#innerdiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+#innerdiv div{
+   width: 60%;
+} 
+}   
+
+@media only screen and (max-width:768px){
+    #navbtn{
+        margin-left: 10vh;
+    }
+    #textlogo{
+        top: 15vh;
+    }
+    #sum{
+        width: 80%;
+        top: 30vh
+    }
+    #background{
+        top:100px;
+        width: 120%;
+    }
+    #whyus{
+        width: 45%;
+        left: 5px
+    }
+    #aboutus{
+        width: 45%;
+        right: 5px;
+    }
+    .tabs{
+        height:400px;
+    }
+    #sec1{
+        height: 125vh;
+    }
+    #banner{
+        margin-top: 7vh;
+    }
+    .scr{
+        font-size:50px;
+    }
+    #lastsec{
+        height: 110vh  
+    }
+
+}
+@media only screen and (max-width:736px){
+    #mobile-navbar{
+        display:block;
+        top: 10px;
+        height: 50px;
+    }
+    .btn{
+        display: none;
+    }
+    #logo{
+        height: 75px;
+    }
+    #navbar{
+        height: 15vh;
+    }
+    #background{
+        display: none;
+    }
+    #mobilebar{
+        width: 20vw;
+    }
+    #textlogo{
+        top:0vh;
+    }
+    #sum{
+        width: 95%;
+        top: 40vh;
+    }
+    #Herosection{
+        height: 150vh;
+    }
+    #whyus{
+        width: 50%;
+        left: 0;
+    }
+    #aboutus{
+        width: 50%;
+        right: 0;
+    }
+    .hbtn{
+        bottom:0px;
+    }
+    #sec1{
+        height: 300vh;
+    }
+    .tabs p{
+        font-size: 15px;
+        font-weight: 500;
+        width: 95%;
+        margin: 1%;
+    }
+    .sideline{
+        height: 150px;
+    }
+    .second{
+        bottom: 0;
+    }
+    #banner{
+        height: 50vh;
+        margin-top: 0vh;
+    }
+    #lastsec{
+        height: 275vh;
+    }
+    #footer{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width:415px){
+    #navbar{
+        height: 7vh;
+    }
+    #mobilebar{
+        width: 50vw;
+    }
+    #sum{
+        width: 95%;
+        font-size: 15px;
+    }
+    #whyus{
+        top: 0;
+        width: 95%;
+        left: 10px;
+    }
+    #aboutus{
+        top: 50vh;
+        width: 95%;
+        right: 10px;
+    }
+    #Herosection{
+        height: 110vh;
+    }
+    .one{
+        left: 10vw;
+    }
+    .two{
+        right: 10vw;
+    }
+    #sec1{
+        height: 150vh;
+        margin-top: 10vh;
+    }
+    .sideline{
+        display: none;
+    }
+    .tabs{
+        width: 95% ;
+    }
+    .tabs p{
+        font-weight: 500;
+        margin: 0;
+        font-size: 13px;
+    }
+    #lastsec{
+        height: 220vh;
+        margin-top: -20vh;
+    }
+    #innerdiv div{
+        margin: 0;
+        width: 95%;
+        padding: 10%;
+        height: 650px;
+        margin-bottom: 5vh;
+    }
+    #footer{
+        height: 20vh;
+    }
+    #part1{
+        width: 50%;
+    }
+    #part1 p{
+    font-size: 12px;
+
+    }
+    #footlogo{
+        display: none;
+    }
+    #soclogo img{
+        height: 30px;
+        width: 30px;
+    }
+    #part2{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:735px){
+    #footlogo{
+        height: 100px;
+        width: 100px;
+        top: 10px;
+    }
+}
+@media only screen and (max-width:420px){
+    #Herosection{
+        height: 110vh;
+    }
+    #footer{
+        height: 20vh;
+    }
+}
+
+@media only screen and (max-width:670px){
+    #Herosection{
+        height: 175vh;
+    }
+    #lastsec{
+        height: 315vh;
+    }
+}
+@media only screen and (max-width:400px){
+    #Herosection{
+        height: 120vh;
+    }
+    #lastsec{
+        height: 250vh;
+    }
+    #whyus{
+        width:95% ;
+    }
+    #whyus h1{
+        font-size: 25px;
+    }
+    #aboutus h1{
+        font-size: 25px;
+    }
+    #footer{
+        height: 30vh;
+    }
+}
+@media only screen and (max-width:413px){
+    #Herosection{
+        height: 110vh;
+    }
+    #lastsec{
+        height: 225vh;
+    }
+}
+@media only screen and (max-width:380px){
+    #navbar{
+        height: 8vh;
+    }
+    #sum{
+        width: 95%;
+        top:45vh
+    }
+    #lastsec{
+        height: 250vh;
+    }
+}
+@media only screen and (max-width:376px){
+    #lastsec{
+        height: 225vh;
+    }
+}

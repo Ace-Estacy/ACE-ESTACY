@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact ACE ESTACY</title>
+    <link rel="icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="contactusPage.css">
+</head>
+<body>
+    <div id="navbar"> <img src="imgs/logo.png" alt="ACE ESTACY" id="logo">
+        <div id="navbtn">
+           <a href="index.html"><h3 class="btn">Home</h3></a>
+            <a href="Sevices.html"><h3 class="btn">Services</h3></a>
+            <a href="contact.html"><h3 class="btn">Contact Us</h3></a>
+            <a href="Aboutus.html"><h3 class="btn">About Us</h3></a>
+            <img src="imgs/navbarimg.png" id="mobile-navbar">
+            <div id="mobilebar">
+                <a href="index.html"><h3 class="mbtn">Home</h3></a>
+                <a href="Sevices.html"><h3 class="mbtn">Services</h3></a>
+                <a href="contact.html"><h3 class="mbtn">Contact Us</h3></a>
+                <a href="Aboutus.html"><h3 class="mbtn">About Us</h3></a>
+            </div>
+          </div></div>
+        <div id="contactmain">
+            <div id="in1"> 
+            <h1 id="title"> Contact Us</h1>
+           <h1 class="info">Email us at : aceestacy@gmail.com</h1>
+           <h1 class="info">Call us at :+917696636906,<br/><span> +917347540019,</span><br/><span>+447920639281</span></h1>
+           <div id="seclogo">
+           <a href="https://www.instagram.com/aceestacy/"><img src="imgs/instagram logo.png"></a>
+           <!--<a href="linkedin.com/in/ace-estacy-058a252a8"> <img src="imgs/linkedin logo.png" ></a>-->
+        </div>  </div>  
+          <div id="form"  >
+                <form  onsubmit="sendemail() ;reset();return false;" id="conform">
+                    <input type="text" placeholder="Name" id="name" required/><br/>
+                    <input type="text" placeholder="Company name" id="companyname" required/><br/>
+                    <input type="email" placeholder="email id" id="email" required/> <br/>
+                    <input type="text" placeholder="Subject" id="Subject" required/><br/>
+                    <input type="text" placeholder="message" id="message" required/><br/>
+                    <button id="subbtn">Send</button>
+                    <p id="recive"></p>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="part1">
+       <img src="imgs/logo.png" alt="ACE ESTACY" id="footlogo">
+       <h4>Get in touch</h4>
+         <p>Email us at :<a href="emailto:aceestacy@gmail.com">aceestacy@gmail.com</a> </p>
+         <p>Call us at :+917696636906,<br/><span> +917347540019,</span><br/><span>+447920639281</span> </p>
+      <div id="soclogo">
+        <a href="https://www.instagram.com/aceestacy/"><img src="imgs/instagram logo.png"></a>
+       <!--<a href="linkedin.com/in/ace-estacy-058a252a8"> <img src="imgs/linkedin logo.png" ></a>-->
+      </div></div>
+      <div id="part2">
+        <h4>Menu</h4>
+        <a href="index.html">Home</a>
+        <a href="Aboutus.html">About us</a>
+        <a href="Sevices.html">Services</a>
+        <a href="contactusPage.html">Send a message</a>
+      </div>
+        </div>
+
+        <script src="message.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="main.js"></script>
+</body>
+</html>
